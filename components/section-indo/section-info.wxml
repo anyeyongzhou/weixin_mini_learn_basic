@@ -1,0 +1,6 @@
+<!--components/section-indo/section-info.wxml-->
+<view class="section" bind:tap="onSectionsTap">
+    <view class="title" bind:tap="onViewTap">{{title}}</view>
+    <view class="cotent info">{{content}}</view>
+    <view class="~blue-text aaa"> 这段文本是蓝色的 </view>
+</view>

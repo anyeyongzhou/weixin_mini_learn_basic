@@ -1,0 +1,8 @@
+<!--pages/03_learn_wxss/index.wxml-->
+<view class="title">learn wxss title </view>
+
+<view class="message">message</view>
+
+<view style="color: blue;"> inline style</view>
+
+<view class="item">我是文本</view>

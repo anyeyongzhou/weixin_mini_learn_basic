@@ -1,0 +1,32 @@
+/* pages/02_common_cpns/indx.wxss */
+.btn{
+    background-color: orange;
+    color: white;
+}
+
+.active{
+    background-color: skyblue;
+}
+
+.container{
+    background-color: orange;
+    height: 150px;
+}
+
+.scroll-x{
+    display: flex;
+    
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.input{
+    width: 200px;
+    height: 30px;
+    border:1px solid black;
+}

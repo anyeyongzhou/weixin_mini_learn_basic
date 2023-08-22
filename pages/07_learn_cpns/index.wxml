@@ -1,0 +1,14 @@
+
+
+<!--自定义组件-->
+<section-info title="页面传递的标题" content="页面传递的内容" info="abc" bind:titleclick="onSectionClick"/>
+<section-info title="我与地坛" content="我不说不代表我不知道"/>
+<section-info title="黄金时代" content="跳下去" class="glod"/>
+<section-info/>
+
+<button bind:tap="onBtnTap">调用组件中的方法</button>
+
+<!-- <test-style/>
+<view class="title">我是页面的title</view>
+<test-style/>
+<test-style/> -->

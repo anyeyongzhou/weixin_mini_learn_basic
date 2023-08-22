@@ -1,0 +1,8 @@
+/* pages/07_learn_cpns/index.wxss */
+.abc{
+    background-color: skyblue;
+}
+
+.blue-text {
+    color: blue;
+  }

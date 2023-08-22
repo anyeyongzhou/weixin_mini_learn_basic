@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+      "my-slot":"/components/my-slot/my-slot",
+      "c-behavior":"/components/c-behavior/c-behavior",
+      "c-lifetime":"/components/c-lifetime/c-lifetime"
+  }
+}

@@ -1,0 +1,18 @@
+<!--pages/08_learn_slot/index.wxml-->
+<my-slot>
+    <button slot="bbb">我是按钮a</button>
+    <button slot="aaa">我是按钮b</button>
+</my-slot>
+<my-slot>
+    <image src="/assets/tabbar/home.png" mode=""/>
+</my-slot>
+<my-slot></my-slot>
+<my-slot></my-slot>
+
+<view class="c-behavior">
+    <c-behavior></c-behavior>
+</view>
+
+<view class="c-lifetime">
+    <c-lifetime></c-lifetime>
+</view>

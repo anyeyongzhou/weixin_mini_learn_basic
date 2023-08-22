@@ -1,0 +1,18 @@
+<!--pages/faver/faver.wxml-->
+<text class="title">这是一个普通的文本</text>
+
+<view class="message">{{message}}</view>
+
+<view class="movies">
+    <block wx:for="{{movies}}" wx:key="*this">
+        <view>{{item}}-{{index}}</view>
+    </block>
+    
+</view>
+
+<view class="counter">
+    <view class="count">当前计数：{{counter}}    
+    </view>
+    <button size="mini" type="primary" bind:tap="increment">+1</button>
+    <button size="mini" type="warn" bind:tap="decrement">-1</button>
+</view>

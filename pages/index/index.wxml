@@ -1,0 +1,5 @@
+<view class="pages">
+    <block wx:for="{{pages}}" wx:key="name">
+        <button class="button" type="primary" bind:tap="onBtnClick" data-item="{{item}}">{{item.name}}</button>    
+    </block>
+</view>

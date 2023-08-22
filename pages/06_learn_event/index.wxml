@@ -1,0 +1,16 @@
+
+<button bind:tap="onBtnTap" bind:longpress="onBtnLongPress" data-name="aaa">绑定Tap事件</button>
+<button bind:touchstart="onBtnTouchStart" bind:touchmove="onBtnTouchMoe" bind:touchcancel="onBtnTouchCancle" bind:touchend="onBtnTouchEnd">绑定触摸事件</button>
+
+<view class="titles">
+    <block wx:for="{{titles}}" wx:key="*this">
+        <view class="item {{currentIndex==index?'active':''}}" data-index="{{index}}" bind:tap="onItemTap">
+            <text class="title">{{item}}</text>
+        </view>
+    </block>
+
+</view>
+
+<view class="mark" bind:tap="onMarkTap" mark:name="kobe" mark:age="18">
+    mark
+</view>

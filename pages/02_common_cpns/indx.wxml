@@ -1,0 +1,80 @@
+<!--input组件-->
+<view>---view----</view>
+<input type="text" class="input" model:value="{{inputValue}}"/>
+
+<view>---view----</view>
+<input type="text" class="input" model:value="{{inputValue}}" confirm-type="search"/>
+<button type="primary"></button>
+
+<!--scroll-view组件-->
+<view>---view----</view>
+<scroll-view class="container scroll-y" scroll-y>
+    <block wx:for="{{viewColor}}" wx:key="*this">
+        <view class="item" style="background-color: {{item}};">{{item}}</view>
+    </block> 
+</scroll-view>
+
+<view>---view----</view>
+<scroll-view class="container scroll-x" scroll-x enable-flex bindscrolltolower="onScrolllower" bindscrolltoupper="onScrollupper" bindscroll="onScroll">
+    <block wx:for="{{viewColor}}" wx:key="*this">
+        <view class="item" style="background-color: {{item}};">{{item}}</view>
+    </block> 
+</scroll-view>
+
+
+<!--image组件-->
+<view>---view----</view>
+<image src="/assets/tabbar/cart.png" mode=""/>
+<image src="/assets/tabbar/cart.png" mode="scaleToFill"/>
+<image src="/assets/tabbar/cart.png" mode="aspectFill"/>
+<image src="/assets/tabbar/cart.png" mode="aspectFit"/>
+<image src="/assets/tabbar/cart.png" mode="widthFix"/>
+<image src="/assets/tabbar/cart.png" mode="heightFix"/>
+<image src="/assets/tabbar/cart.png" mode="top"/>
+<image src="/assets/tabbar/cart.png" mode="top left"/>
+<image src="/assets/tabbar/cart.png" mode="top right"/>
+<image src="/assets/tabbar/cart.png" mode="bottom"/>
+
+<image src="https://img0.baidu.com/it/u=3613060912,844995059&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=1000" mode="heightFix"/>
+
+<button bind:tap="onChooseImage">选择图片</button>
+<image src="{{imageUrl}}" mode="heightFix"/>
+
+<!--view组件-->
+<view>---view----</view>
+<view>我是view组件</view>
+<view>哈哈哈</view>
+<view bind:tap="onViewTap">view点击事件</view>
+
+<!--button组件-->
+<view>---view----</view>
+<button>按钮</button>
+<button size="mini">按钮的size属性</button>
+<button size="mini" type="primary">type属性</button>
+<button size="mini" type="default">type属性</button>
+<button size="mini" type="warn">type属性</button>
+<button class="btn" size="mini">自定义颜色</button>
+<button plain size="mini">plain属性</button>
+<button disabled size="mini"> disable属性</button>
+<button loading size="mini">loading属性</button>
+<button hover-class="active" size="mini"> hover效果</button>
+<view>---view----</view>
+<button open-type="contact" >打开会话</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">用户信息(废弃)</button>
+<button bind:tap="getUserInfo" type="primary">用户信息</button>
+<button open-type="chooseAvatar" bindchooseavatar="getAcatar">获取用户头像</button>
+<image src="{{avatarUrl}}" mode="widthFix"/>
+<input type="nickname" placeholder="请输入昵称" bindnicknamereview="getNickname"/>
+
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取电话号码</button>
+
+
+
+<!--test组件-->
+<view>---view----</view>
+<text>Hello World</text>
+<text user-select>{{message}}</text>
+
+<text>&gt;</text>
+<text>></text>
+<text decode>&gt;</text>

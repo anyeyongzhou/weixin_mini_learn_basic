@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+      "section-info":"/components/section-indo/section-info",
+      "test-style":"/components/test-style/test-style"
+    }
+}

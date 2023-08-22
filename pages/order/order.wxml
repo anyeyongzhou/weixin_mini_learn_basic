@@ -1,0 +1,7 @@
+<!--pages/order/order.wxml-->
+<text>pages/order/order.wxml</text>
+
+<view class="user">
+    <view class="name">name:{{userInfo.nikename}}</view>
+    <view class="level">level:{{userInfo.level}}</view>
+</view>

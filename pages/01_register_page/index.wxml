@@ -1,0 +1,27 @@
+<!--pages/test01/index.wxml-->
+<view class="banner">
+    <swiper circular autoplay indicator-dots current="2" interval="1000">
+       <block wx:for="{{banners}}" wx:key="acm">
+        <swiper-item>
+            <image src="{{item.image}}" class="image" mode="widthFix" show-menu-by-longpress></image>
+        </swiper-item>
+       </block>
+    </swiper>
+</view>
+
+<view>
+    <view class="counter">计数器：{{counter}}</view>
+</view>
+
+<view class="buttons">
+    <button bind:tap="onBtn1Click" type="default" class="btn1">按钮1</button>
+    <block wx:for="{{btns}}" wx:key="*this">
+        <button style="background-color: {{item}};" class="button" bind:tap="onBtnClick" data-color="{{item}}">{{item}}</button>
+    </block>
+</view>
+
+<view class="list">
+    <block wx:for="{{30}}" wx:key="*this">
+        <view class="list">{{item}} </view>
+    </block>
+</view>

@@ -1,0 +1,7 @@
+
+<button bind:tap="onBtnToast">showToast</button>
+<button bind:tap="onBtnModal">showModal</button>
+<button bind:tap="onBtnLoading">showLoading</button>
+<button bind:tap="onBtnActionSheet">showActionSheet</button>
+<button bind:tap="onBtnSys">获取设备信息</button>
+<button bind:tap="onBtnLocation">获取位置信息</button>

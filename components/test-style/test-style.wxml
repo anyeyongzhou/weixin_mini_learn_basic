@@ -1,0 +1,2 @@
+<!--components/test-style/test-style.wxml-->
+<view class="title">我是test-style的标题</view>
